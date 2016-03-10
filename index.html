@@ -1,49 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Your Name Here - Portfolio</title>
-        
-        <style>
-            #navbar{
-                background-color:black;
-                color:maroon;
-              }
-            #main{
-                background-color:maroon;
-                color:black;
-              }
-            a{
-              color:maroon;
-            }
-            
-            
-        </style>
-        
-    </head>
-    <body>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Kassandra's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:black;
+    }
     
-        <div id="navbar">
-             <!--Watch the Khan Academy Links Video before making links-->
-             <!--Put your list of navbar links here -->
-            <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">PORTFOLIO</a></li>
-              <li><a href="">SOCIAL MEDIA</a></li>
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:maroon;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: black;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:maroon;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: maroon;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: black;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("./img/index/bvb.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                    <li><a href="./portfolio.html">Dinner Plate</a></li>
+                    <li><a href="./portfolio.html">Fish Tank</a></li>
+                    <li><a href="./portfolio.html">Ad Design</a></li>
+                    <li><a href="./portfolio.html">History Manifesto</a></li>
+                    <li><a href="./portfolio.html">Algebra Challenges</a></li>
+                </ul>
             </ul>
         </div>
-        
-        <div id="main">
-            <!-- Put all of your main HTML here -->
-            <h1>Kassandra Vivanco G.</h1>
-            <img src = "https://www.pamperedpuppy.com/doggydesktops/wp-content/uploads/2011/06/pamperedpuppy20081202t.jpg">
+        <div class="main-page">
+            <div class="image-container"></div>
             
-            <h2>Where I'm From</h2>
-              <p> My parents were born in Mexico and came together to the U.S a couple months after they were married. My dad came with his older brothers but then went back for my mom. My mom lived here for a couple years when she was a little girl but she also went back to Mexico. When my parents came I was already on my way so, my mom was pregnant with me when she came. I was born and raised in San Jose, California. I still live here.</p>
-            <h2>A Little About Me </h2>
-              <p>I am a student at Alpha:Cindy Avitia High School. I'm a freshman. I like to Listen to Music, especially rock music. I love Black Veil Brides and Bring Me The Horizon. My favorite color is black. I love dogs. I also love Chinese Food. </p>
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Kassandra's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">Where I'm From</h2>
+                  <p class="text-info"> My parents were born in Mexico and came together to the U.S a couple months after they were married. My dad came with his older brothers but then went back for my mom. My mom lived here for a couple years when she was a little girl but she also went back to Mexico. When my parents came I was already on my way so, my mom was pregnant with me when she came. I was born and raised in San Jose, California and I still live here
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">A Little About Me</h2>
+                <p class="text-info">I am a student at Alpha:Cindy Avitia High School. I'm a freshman. I like to Listen to Music, especially rock music. I love Black Veil Brides and Bring Me The Horizon. My favorite color is black. I love dogs. I also love Chinese Food
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
         </div>
- 
-    </body>
+    </div>
+    
+    
+
+</body>
 </html>
